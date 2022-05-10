@@ -7,7 +7,7 @@ export const databaseProviders = [
     useFactory: async () =>
       await createConnection({
         type: 'postgres',
-        host: 'localhost',
+        host: 'pgsql',
         port: 5432,
         username: 'iniciador_admin',
         password: 'Di@blo2000',
