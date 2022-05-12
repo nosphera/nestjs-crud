@@ -11,7 +11,7 @@ export class Game {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ nullable: false, type: 'varchar', length: 200 })
+  @Column({ nullable: false, type: 'varchar', length: 200, unique: true })
   name: string;
 
   @Column({ nullable: false, type: 'varchar', length: 20 })
